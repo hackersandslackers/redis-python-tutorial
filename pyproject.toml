@@ -6,7 +6,7 @@ authors = ["Todd Birchard <toddbirchard@gmail.com>"]
 maintainers = ["Todd Birchard <toddbirchard@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-homepage = ""
+homepage = "https://hackersandslackers.com/redis-python/"
 repository = "https://github.com/hackersandslackers/redis-python-tutorial/"
 documentation = "https://hackersandslackers.com/using-redis-python-applications/"
 keywords = ["Redis",
@@ -18,6 +18,8 @@ keywords = ["Redis",
 [tool.poetry.dependencies]
 python = "^3.7"
 redis = "*"
+loguru = "*"
+python-dotenv = "*"
 
 [tool.poetry.dev-dependencies]
 pytest = "^4.6"
@@ -30,4 +32,4 @@ build-backend = "poetry.masonry.api"
 init = "wsgi:main"
 
 [tool.poetry.urls]
-issues = "https://github.com/hackersandslackers/python-poetry-tutorial/issues"
+issues = "https://github.com/hackersandslackers/redis-python-tutorial/issues"
