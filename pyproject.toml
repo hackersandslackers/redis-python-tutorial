@@ -6,9 +6,9 @@ authors = ["Todd Birchard <toddbirchard@gmail.com>"]
 maintainers = ["Todd Birchard <toddbirchard@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-homepage = "https://hackersandslackers.com/redis-python/"
+homepage = "https://hackersandslackers.com/redis-py-python/"
 repository = "https://github.com/hackersandslackers/redis-python-tutorial/"
-documentation = "https://hackersandslackers.com/using-redis-python-applications/"
+documentation = "https://hackersandslackers.com/redis-py-python/"
 keywords = ["Redis",
             "Cache",
             "Queue",
