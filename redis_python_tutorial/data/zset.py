@@ -3,7 +3,7 @@ from redis_python_tutorial.logging import logger
 
 
 def sorted_set_values_demo(r):
-    """Create sorted set and change indexof values."""
+    """Create sorted set and change index of values."""
     # Initialize sorted set with 3 values
     r.zadd('top_songs_set', {'Never Change - Jay Z': 1,
                              'Rich Girl - Hall & Oats': 2,
