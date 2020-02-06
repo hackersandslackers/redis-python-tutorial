@@ -24,6 +24,16 @@ $ poetry install
 $ poetry run
 ```
 
+...or Pipenv:
+
+```shell
+$ git clone https://github.com/hackersandslackers/redis-python-tutorial.git
+$ cd redis-python-tutorial
+$ pipenv shell
+$ pipenv update
+$ python3 main.py
+```
+
 Alternatively, try installing via `setup.py`:
 
 ```shell
