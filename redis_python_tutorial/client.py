@@ -1,3 +1,4 @@
+"""Create Redis client."""
 import redis
 from config import (redis_host,
                     redis_password,
@@ -9,4 +10,4 @@ r = redis.StrictRedis(host=redis_host,
                       port=redis_port,
                       db=redis_db,
                       charset="utf-8",
-                      decode_responses=True)
+                      decode_responses=True,)
