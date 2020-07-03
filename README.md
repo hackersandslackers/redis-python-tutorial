@@ -12,19 +12,20 @@
 
 Source code for the accompanying tutorial found here: https://hackersandslackers.com/redis-py-python/
 
-## Getting Started
+## Installation
 
-Installation is recommended with Poetry:
+**Installation via `requirements.txt`**:
 
 ```shell
 $ git clone https://github.com/hackersandslackers/redis-python-tutorial.git
 $ cd redis-python-tutorial
-$ poetry shell
-$ poetry install
-$ poetry run
+$ python3 -m venv myenv
+$ source myenv/bin/activate
+$ pip3 install -r requirements.txt
+$ python3 main.py
 ```
 
-...or Pipenv:
+**Installation via [Pipenv](https://pipenv-fork.readthedocs.io/en/latest/)**:
 
 ```shell
 $ git clone https://github.com/hackersandslackers/redis-python-tutorial.git
@@ -34,14 +35,16 @@ $ pipenv update
 $ python3 main.py
 ```
 
-Alternatively, try installing via `setup.py`:
+**Installation via [Poetry](https://python-poetry.org/)**:
 
 ```shell
 $ git clone https://github.com/hackersandslackers/redis-python-tutorial.git
 $ cd redis-python-tutorial
-$ python3 setup.py install
-$ python3 main.py
+$ poetry shell
+$ poetry update
+$ poetry run
 ```
+
 -----
 
 **Hackers and Slackers** tutorials are free of charge. If you found this tutorial helpful, a [small donation](https://www.buymeacoffee.com/hackersslackers) would be greatly appreciated to keep us in business. All proceeds go towards coffee, and all coffee goes towards more content.
