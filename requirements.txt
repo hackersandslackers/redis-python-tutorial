@@ -8,6 +8,6 @@ py==1.8.1
 pyparsing==2.4.6
 pytest==6.0.1
 python-dotenv==0.14.0
-redis==3.4.1
+redis==3.5.3
 six==1.14.0
 wcwidth==0.1.8
