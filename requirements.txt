@@ -5,7 +5,7 @@ more-itertools==8.2.0
 packaging==20.1
 pluggy==0.13.1
 py==1.8.1
-pyparsing==2.4.6
+pyparsing==2.4.7
 pytest==6.0.1
 python-dotenv==0.14.0
 redis==3.5.3
