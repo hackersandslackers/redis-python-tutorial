@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "redis-python-tutorial"
+name = "redis_python_tutorial"
 version = "0.1.0"
 description = ""
 authors = ["Todd Birchard <toddbirchard@gmail.com>"]
@@ -9,14 +9,16 @@ readme = "README.md"
 homepage = "https://hackersandslackers.com/redis-py-python/"
 repository = "https://github.com/hackersandslackers/redis-python-tutorial/"
 documentation = "https://hackersandslackers.com/redis-py-python/"
-keywords = ["Redis",
-            "Cache",
-            "Queue",
-            "Sessions",
-            "NoSQL"]
+keywords = [
+    "Redis",
+    "Cache",
+    "Queue",
+    "Memory",
+    "NoSQL"
+]
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "3.8"
 redis = "*"
 loguru = "*"
 python-dotenv = "*"
@@ -26,7 +28,7 @@ requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
 
 [tool.poetry.scripts]
-run = "main:init_redis_app"
+run = "main:app"
 
 [tool.poetry.urls]
 issues = "https://github.com/hackersandslackers/redis-python-tutorial/issues"

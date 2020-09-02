@@ -8,7 +8,7 @@ from redis_python_tutorial.data.set import set_values_demo
 from redis_python_tutorial.data.zset import sorted_set_values_demo
 
 
-def init_redis_app():
+def init_app():
     """Entry point function."""
     r.flushdb()
     init_db_with_values(r)

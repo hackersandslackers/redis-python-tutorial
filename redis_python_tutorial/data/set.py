@@ -3,7 +3,7 @@ from redis_python_tutorial.logging import logger
 
 
 def set_values_demo(r):
-    """Execute unions and intersets between sets."""
+    """Execute unions and intersects between sets."""
     # Add item to set 1
     r.sadd('my_set_1', 'Y')
     logger.info(f"my_set_1: {r.smembers('my_set_1')}'")

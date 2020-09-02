@@ -1,5 +1,11 @@
 """Construct Redis connection URI."""
 from os import environ
+from dotenv import load_dotenv
+
+
+# Load environment variables
+basedir = path.abspath(path.dirname(__file__))
+load_dotenv(path.join(basedir, '.env'))
 
 redis_host = environ.get('REDIS_HOST')
 redis_password = environ.get('REDIS_PASSWORD')
