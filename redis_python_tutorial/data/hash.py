@@ -1,14 +1,20 @@
 """Working with hash values."""
-from redis_python_tutorial.logging import logger
+from redis import Redis
+
+from redis_python_tutorial.logger import LOGGER
 
 
-def hash_values_demo(r):
-    """Create a hash value."""
+def hash_values_demo(r: Redis):
+    """
+    Create a Redis hash value.
+
+    :param Redis r: Remote Redis instance.
+    """
     record = {
         "name": "Hackers and Slackers",
         "description": "Mediocre tutorials",
         "website": "https://hackersandslackers.com/",
-        "github": "https://github.com/hackersandslackers"
+        "github": "https://github.com/hackersandslackers",
     }
-    r.hmset('business', record)
-    logger.info(f"business: {r.hgetall('business')}")
+    r.hset("business", mapping=record)
+    LOGGER.info(f"business: {r.hgetall('business')}")

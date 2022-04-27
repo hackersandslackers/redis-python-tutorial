@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "redis_python_tutorial"
+name = "Redis Python Tutorial"
 version = "0.1.0"
 description = ""
 authors = ["Todd Birchard <toddbirchard@gmail.com>"]
@@ -18,17 +18,30 @@ keywords = [
 ]
 
 [tool.poetry.dependencies]
-python = "3.8"
+python = "3.9"
 redis = "*"
 loguru = "*"
 python-dotenv = "*"
 
+[tool.poetry.dev-dependencies]
+pytest = "*"
+coverage = "*"
+mock = "*"
+mypy = "*"
+black = "*"
+isort = "*"
+flake8 = "*"
+pylint = "*"
+
 [build-system]
-requires = ["poetry>=0.12"]
+requires = ["poetry>=1.1.12"]
 build-backend = "poetry.masonry.api"
 
 [tool.poetry.scripts]
-run = "main:app"
+run = "main:init_script"
 
 [tool.poetry.urls]
 issues = "https://github.com/hackersandslackers/redis-python-tutorial/issues"
+
+[tool.black]
+line-length = 100

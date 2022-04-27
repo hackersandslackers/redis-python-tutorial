@@ -1,17 +1,13 @@
 """Create Redis client."""
 import redis
-from config import (
-    redis_host,
-    redis_password,
-    redis_port,
-    redis_db
-)
+
+from config import REDIS_DB, REDIS_HOST, REDIS_PASSWORD, REDIS_PORT
 
 r = redis.StrictRedis(
-    host=redis_host,
-    password=redis_password,
-    port=redis_port,
-    db=redis_db,
+    host=REDIS_HOST,
+    password=REDIS_PASSWORD,
+    port=REDIS_PORT,
+    db=REDIS_DB,
     charset="utf-8",
-    decode_responses=True
+    decode_responses=True,
 )

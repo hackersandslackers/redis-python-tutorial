@@ -1,16 +1,21 @@
 """Construct Redis connection URI."""
-from os import environ
+from os import getenv, path
+
 from dotenv import load_dotenv
 
-
 # Load environment variables
-basedir = path.abspath(path.dirname(__file__))
-load_dotenv(path.join(basedir, '.env'))
+BASE_DIR = path.abspath(path.dirname(__file__))
+load_dotenv(path.join(BASE_DIR, ".env"))
 
-redis_host = environ.get('REDIS_HOST')
-redis_password = environ.get('REDIS_PASSWORD')
-redis_port = environ.get('REDIS_PORT')
-redis_db = environ.get('REDIS_DATABASE')
-redis_uri = f'redis://:{redis_host}@{redis_password}:{redis_port}/{redis_db}'
+# Redis config
+REDIS_HOST = getenv("REDIS_HOST")
+REDIS_USERNAME = getenv("REDIS_USERNAME")
+REDIS_PASSWORD = getenv("REDIS_PASSWORD")
+REDIS_PORT = getenv("REDIS_PORT")
+REDIS_DB = getenv("REDIS_DB")
+REDIS_URI = f"redis://:{REDIS_HOST}@{REDIS_USERNAME}:{REDIS_PORT}/{REDIS_DB}"
 
-redis_expiration = 604800
+REDIS_EXPIRATION = 604800
+
+# Logging
+PERSIST_LOG_FILES = True
