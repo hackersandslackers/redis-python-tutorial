@@ -3,7 +3,7 @@ colorama==0.4.4; python_version >= "3.5" and python_full_version < "3.0.0" and s
 deprecated==1.2.13; python_version >= "3.6" and python_full_version < "3.0.0" or python_full_version >= "3.4.0" and python_version >= "3.6"
 loguru==0.6.0; python_version >= "3.5"
 packaging==21.3; python_version >= "3.6"
-pyparsing==3.0.8; python_full_version >= "3.6.8" and python_version >= "3.6"
+pyparsing==3.0.9; python_full_version >= "3.6.8" and python_version >= "3.6"
 python-dotenv==0.20.0; python_version >= "3.5"
 redis==4.2.2; python_version >= "3.6"
 win32-setctime==1.1.0; sys_platform == "win32" and python_version >= "3.5"
